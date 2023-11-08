@@ -1,0 +1,91 @@
+@import "./main.css";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+/* Ensure full viewport height and remove default margin/padding */
+.component-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Needed for absolute positioning of children */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  margin: 0;
+  padding: 0;
+  background-color: white; /* In case the image is transparent */
+  overflow: hidden; /* Hide the overflow */
+}
+
+/* Style for the image with transition for a fade effect */
+.component-fullscreen {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; /* Cover the whole area without stretching */
+  position: absolute; /* Absolutely positioned relative to its container */
+  top: 0;
+  left: 0;
+  opacity: 0; /* Start with image invisible */
+  pointer-events: none; /* Prevent element from capturing click events when it's not active */
+  transition: opacity 1s ease-in-out; /* Smooth transition for the fade effect */
+}
+
+/* When the image is active, it should be fully visible */
+.component-fullscreen.active {
+  opacity: 1;
+  pointer-events: all; /* Allow element to capture click events when it's active */
+}
+
+/* Button styles */
+.prev-motion,
+.next-motion {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px; /* Fixed width for a circle */
+  height: 60px; /* Fixed height for a circle */
+  line-height: 30px; /* Align text/arrow vertically */
+  font-size: 24px; /* Adjust font size as needed */
+  color: white;
+  border: none;
+  text-align: center; /* Center the text/arrow horizontally */
+  z-index: 2;
+  border: 2px solid white;
+  border-radius: 50%; /* This will make it a perfect circle */
+  background-color: transparent; /* Change as needed */
+  padding: 0; /* Reset padding */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for depth */
+  outline: none; /* Remove outline to maintain the circle shape on focus */
+  font-family: "Poppins", sans-serif;
+}
+
+.prev-motion::before,
+.next-motion::before {
+  content: ""; /* Use a font icon like FontAwesome here if you want icons */
+  display: inline-block;
+  /* Use font icon classes or background-images if preferred */
+}
+
+.prev-motion:hover,
+.next-motion:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Optional: Adds a shadow for depth */
+  background-color: #ff344d; /* Change as needed */
+  color: white;
+  border: 1px solid #ff344d;
+}
+
+.prev-motion {
+  left: 50px;
+}
+
+.next-motion {
+  right: 50px;
+}
+
+/* You might want to add styles for hiding buttons on touch devices 
+   or provide alternative means for touch navigation. */

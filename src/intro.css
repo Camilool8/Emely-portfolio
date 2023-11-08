@@ -1,0 +1,113 @@
+@import "./main.css";
+@import "./fonts.css";
+
+.portfolio-background {
+  background-image: url("./assets/images/gradient_1_8.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-header {
+  font-family: "Gliker", sans-serif;
+}
+
+.text-header-xl-porta {
+  font-size: 4rem; /* Mobile-first approach */
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.text-header-xl-folio {
+  font-size: 5rem; /* Mobile-first approach */
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.text-body {
+  font-family: "Poppins", sans-serif;
+}
+
+.text-sub-left {
+  bottom: 2rem; /* Mobile-first */
+  left: 2rem;
+  font-size: 1.5rem;
+}
+
+.text-sub-right {
+  bottom: 2rem; /* Mobile-first */
+  right: 2rem;
+  font-size: 1.5rem;
+}
+
+/* Adjust the font sizes, positions, and paddings as needed */
+.text-md {
+  padding: 1rem;
+}
+
+/* Media queries for larger screens */
+
+@media screen and (min-width: 768px) {
+  /* Tablet screens */
+  .text-header-xl-porta {
+    font-size: 8rem;
+  }
+
+  .text-header-xl-folio {
+    font-size: 9rem;
+  }
+
+  .text-sub-left,
+  .text-sub-right {
+    font-size: 2rem;
+    bottom: 4rem;
+    left: 4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* Desktop screens */
+  .text-header-xl-porta {
+    font-size: 12.5rem !important;
+  }
+
+  .text-header-xl-folio {
+    font-size: 14rem !important;
+  }
+
+  .text-sub-left {
+    font-size: 2.75rem;
+    bottom: 6rem;
+    left: 6rem;
+  }
+
+  .text-sub-right {
+    font-size: 2.75rem;
+    bottom: 6rem;
+    right: 6rem;
+  }
+}
+
+/* Styles for mobile devices */
+@media (max-width: 768px) {
+  /* Assuming 768px is your breakpoint for mobile */
+  .stacked-element {
+    position: static !important; /* Overrides absolute positioning */
+    text-align: center; /* Centers the text */
+    margin-bottom: -2.2rem !important; /* Space between stacked elements */
+  }
+
+  .text-sub-left,
+  .text-sub-right {
+    margin-top: 4rem;
+  }
+
+  /* Adjust other styles as necessary */
+}

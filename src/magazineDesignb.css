@@ -1,0 +1,55 @@
+/* YourComponent.css */
+.full-view-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.centered-container {
+  background-image: url("./assets/images/gradient_1_8.png"); /* Use your gradient image here */
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; /* This allows absolute positioning inside the container */
+  width: 75%; /* or the width you desire */
+  height: 80%; /* or the height you desire */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upper-left-text {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  margin: 20px; /* Adjust as needed */
+  /* Add additional styling here such as font size, color, etc. */
+  font: 3rem "Poppins", sans-serif;
+  color: white;
+  letter-spacing: 0.3rem;
+}
+
+.lower-right-text {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  margin: 20px; /* Adjust as needed */
+  /* Add additional styling here such as font size, color, etc. */
+  font: 3rem "Poppins", sans-serif;
+  color: white;
+  letter-spacing: 0.3rem;
+}
+
+.centered-image {
+  position: absolute;
+  left: 12%; /* Adjust to move the image to the right */
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5); /* Cast a shadow to the right */
+  /* Make sure your image size is what you want it to be */
+  height: 60%; /* or the size you want */
+  width: 90%; /* or the size you want */
+}

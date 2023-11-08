@@ -1,0 +1,51 @@
+@import "./main.css";
+
+.full-view-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.centered-split-container {
+  display: flex;
+  width: 75%; /* or the width you desire */
+  height: 80%; /* or the height you desire */
+  background-color: #ffffff; /* For the overall background */
+}
+
+.gradient-column {
+  background-image: url("./assets/images/gradient_1_8.png");
+  flex: 1;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.upper-left-text,
+.lower-right-text {
+  position: absolute;
+  margin: 20px; /* Adjust as needed */
+  font: 3rem "Poppins", sans-serif;
+}
+
+.upper-left-text {
+  top: 0;
+  left: 0;
+}
+
+.lower-right-text {
+  bottom: 0;
+  right: 0;
+}
+
+.video-column {
+  flex: 1;
+  overflow: hidden; /* In case the video is too big */
+}
+
+.full-width-video {
+  width: 100%;
+  height: 100%; /* Adjust as needed, maybe use 'auto' if the aspect ratio is off */
+  object-fit: cover; /* Cover the entire area without stretching */
+}

@@ -1,0 +1,54 @@
+@import "./main.css";
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%; /* Full width */
+  height: 100vh; /* Adjust to the height of your carousel */
+  overflow: hidden;
+}
+
+.carousel-panel {
+  width: calc(100% / 3); /* One third of the container */
+  height: 95%;
+  position: absolute;
+  transition: transform 0.5s ease, z-index 0.5s ease;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.video {
+  object-fit: cover;
+}
+
+.graphic {
+  background-image: url("./assets/images/gradient_1_8.png");
+  background-size: cover; /* Ensure the image covers the full panel */
+  background-position: center; /* Center the image within the panel */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font: 3rem "Poppins", sans-serif;
+  letter-spacing: 0.3rem;
+}
+
+/* Active state for the panel */
+.carousel-panel.active {
+  z-index: 3;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5); /* Adds shadow for depth */
+}
+
+/* Non-active panels styles for positioning behind active */
+.carousel-panel.behind-left {
+  transform: translateX(-33.3333%) scale(0.8);
+  z-index: 1;
+}
+
+.carousel-panel.behind-right {
+  transform: translateX(33.3333%) scale(0.8);
+  z-index: 1;
+}

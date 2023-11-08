@@ -1,0 +1,70 @@
+@import "./main.css";
+
+.full-height-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.column {
+  flex: 1; /* Each column takes up equal space */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  flex-direction: column; /* Stack children vertically */
+}
+
+.video-column {
+  background: #f0f0f0;
+  padding: 0; /* remove padding if you want the video to fill the entire column */
+  overflow: hidden; /* Add this to prevent the video from overflowing if you decide to keep some padding */
+  position: relative; /* Position relative to allow absolute positioning within */
+}
+
+.video-column video {
+  width: 100%; /* Full width of the column */
+  height: 100%; /* Full height of the column */
+  object-fit: cover; /* Cover the full area, this may cut off some parts of the video */
+  position: absolute; /* Absolute position to stick to the column */
+  top: 0;
+  left: 0;
+}
+
+.text-column {
+  background: white;
+  color: #333; /* Dark text for readability on white background */
+  text-align: center; /* Center text horizontally */
+  padding: 0 20px; /* Padding on the sides */
+}
+
+.text-body {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.2rem;
+}
+
+.image-column {
+  background: #ececec; /* Placeholder background color, similar to the graphic */
+}
+
+.image-column img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the column with the image without stretching */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .full-height-container {
+    flex-direction: column;
+  }
+  .column {
+    height: 33.333%; /* Each column takes up one third of the height on small screens */
+  }
+  .video-column video,
+  .image-column img {
+    max-height: none;
+    max-width: 100%;
+  }
+}
+
+/* Additional styles as needed */
