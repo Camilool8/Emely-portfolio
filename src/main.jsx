@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
-import Intro from "./Intro.jsx";
+import Intro from "./intro.jsx";
 import Cv from "./cv.jsx";
 import Index from "./index.jsx";
 import SocialMedia from "./socialMedia.jsx";
