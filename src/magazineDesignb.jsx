@@ -2,7 +2,7 @@
 import "./magazineDesignb.css"; // Make sure to import your CSS file
 import centeredImage from "./assets/images/revista1.png";
 
-function MagazineDesingb() {
+function MagazineDesignb() {
   return (
     <div className="full-view-container">
       <div className="centered-container">
@@ -14,4 +14,4 @@ function MagazineDesingb() {
   );
 }
 
-export default MagazineDesingb;
+export default MagazineDesignb;
