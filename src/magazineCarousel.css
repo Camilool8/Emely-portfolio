@@ -54,7 +54,7 @@ body {
   border: none;
   text-align: center; /* Center the text/arrow horizontally */
   z-index: 2;
-  border: 1px solid #ff344d;
+  border: 2px solid #ff344d;
   border-radius: 50%; /* This will make it a perfect circle */
   background-color: white; /* Change as needed */
   padding: 0; /* Reset padding */
@@ -75,7 +75,7 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Optional: Adds a shadow for depth */
   background-color: #ff344d; /* Change as needed */
   color: white;
-  border: 1px solid #ff344d;
+  border: 2px solid #ff344d;
 }
 
 .prev-magazine {

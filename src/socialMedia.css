@@ -49,13 +49,13 @@ body {
   height: 60px; /* Fixed height for a circle */
   line-height: 30px; /* Align text/arrow vertically */
   font-size: 24px; /* Adjust font size as needed */
-  color: white;
+  color: #ff344d;
   border: none;
   text-align: center; /* Center the text/arrow horizontally */
   z-index: 2;
-  border: 2px solid white;
+  border: 2px solid #ff344d;
   border-radius: 50%; /* This will make it a perfect circle */
-  background-color: transparent; /* Change as needed */
+  background-color: white; /* Change as needed */
   padding: 0; /* Reset padding */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for depth */
   outline: none; /* Remove outline to maintain the circle shape on focus */
@@ -72,9 +72,9 @@ body {
 .prev-social:hover,
 .next-social:hover {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Optional: Adds a shadow for depth */
-  background-color: white; /* Change as needed */
-  color: #ff344d;
-  border: 1px solid #ff344d;
+  background-color: #ff344d; /* Change as needed */
+  color: white;
+  border: 2px solid #ff344d;
 }
 
 .prev-social {

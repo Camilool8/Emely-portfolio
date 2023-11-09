@@ -57,11 +57,11 @@
 @media screen and (min-width: 768px) {
   /* Tablet screens */
   .text-header-xl-porta {
-    font-size: 8rem;
+    font-size: 7rem;
   }
 
   .text-header-xl-folio {
-    font-size: 9rem;
+    font-size: 8rem;
   }
 
   .text-sub-left,
@@ -75,21 +75,21 @@
 @media screen and (min-width: 1024px) {
   /* Desktop screens */
   .text-header-xl-porta {
-    font-size: 12.5rem !important;
+    font-size: 10.4rem !important;
   }
 
   .text-header-xl-folio {
-    font-size: 14rem !important;
+    font-size: 11.6rem !important;
   }
 
   .text-sub-left {
-    font-size: 2.75rem;
+    font-size: 2.3rem;
     bottom: 6rem;
     left: 6rem;
   }
 
   .text-sub-right {
-    font-size: 2.75rem;
+    font-size: 2.3rem;
     bottom: 6rem;
     right: 6rem;
   }

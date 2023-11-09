@@ -6,6 +6,8 @@ import Index from "./index.jsx";
 import SocialMedia from "./socialMedia.jsx";
 import MagazineCarousel from "./magazineCarousel.jsx";
 import MotionPanels from "./motionPanels.jsx";
+import Branding from "./branding.jsx";
+import Contact from "./contact.jsx";
 import "./main.css";
 
 const useScrollSnap = (ref) => {
@@ -120,7 +122,7 @@ const Main = () => {
     setCurrentIndex(index);
   };
 
-  const fullPageComponentCount = 6; // Adjust this if you add/remove components
+  const fullPageComponentCount = 8;
 
   return (
     <>
@@ -142,6 +144,12 @@ const Main = () => {
         </div>
         <div className="snap-child">
           <MagazineCarousel />
+        </div>
+        <div className="snap-child">
+          <Branding />
+        </div>
+        <div className="snap-child">
+          <Contact />
         </div>
       </div>
       <Navigation
