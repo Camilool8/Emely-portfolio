@@ -1,7 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
 import Intro from "./intro.jsx";
-import Cv from "./cv.jsx";
 import Index from "./index.jsx";
 import SocialMedia from "./socialMedia.jsx";
 import MagazineCarousel from "./magazineCarousel.jsx";
@@ -122,16 +121,13 @@ const Main = () => {
     setCurrentIndex(index);
   };
 
-  const fullPageComponentCount = 8;
+  const fullPageComponentCount = 7;
 
   return (
     <>
       <div ref={rootRef} className="scroll-container">
         <div className="snap-child">
           <Intro />
-        </div>
-        <div className="snap-child">
-          <Cv />
         </div>
         <div className="snap-child">
           <Index />
